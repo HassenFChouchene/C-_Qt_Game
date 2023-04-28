@@ -1,1 +1,1 @@
-# C-_Qt_Game
+# C++_Qt_Game
