@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui \
+         multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,12 +18,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Bullet.cpp \
-    Myrect.cpp \
+    Enemy.cpp \
+    Game.cpp \
+    Health.cpp \
+    MyRect.cpp \
+    Player.cpp \
+    Score.cpp \
     main.cpp
 
 HEADERS += \
     Bullet.h \
-    Myrect.h
+    Enemy.h \
+    Game.h \
+    Health.h \
+    MyRect.h \
+    Player.h \
+    Score.h
 
 FORMS += \
     mainwindow.ui
@@ -31,3 +42,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    RS.qrc
